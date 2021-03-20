@@ -4,6 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card form</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <form class="card">
+      <div class="card__front">
+        <div class="svg-chip">
+          <img src="https://dummyimage.com/20x40/70c2c2/000.png" width="50px" height="30px" />
+        </div>
+        <label for="card_number" class="card__field-number">
+          Номер карты
+          <input
+            type="text"
+            id="card_number"
+            name="card_number"
+            class="card_number"
+            placeholder="9415 1565 1358 1654"
+          />
+        </label>
+
+        <label for="card_user" class="card__field-user">
+          Имя держателя
+          <input
+            type="text"
+            id="card_user"
+            name="card_user"
+            class="card_user"
+            placeholder="NIKITA STROGANOV"
+          />
+        </label>
+        <label for="card_data">
+          Срок действия
+          <input
+            type="text"
+            id="card_data"
+            name="card_data"
+            class="card_data"
+            placeholder="11/25"
+          />
+        </label>
+      </div>
+      <div class="card__back">
+        <!-- <label for="card_pin">
+          CV-код
+          <input type="text" id="card_pin" name="card_pin" class="card_pin" placeholder="●●●" />
+        </label> -->
+      </div>
+      <button type="submit" class="card_submit">Оплатить</button>
+    </form>
+  </body>
 </html>

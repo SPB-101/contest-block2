@@ -1,0 +1,112 @@
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:hover {
+  border-color: var(--nord9);
+}
+
+input:focus {
+  outline-color: var(--nord9);
+}
+
+.card {
+  position: relative;
+  width: 400px;
+}
+
+.card__front,
+.card__back {
+  width: 400px;
+  height: 250px;
+  border: 1px solid #ccc;
+  filter: drop-shadow(1px 1px 4px var(--nord3));
+  border-radius: 4px;
+}
+
+.card__front {
+  z-index: 100;
+  background-color: var(--nord6);
+}
+
+.card__back {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  z-index: -1;
+  background-color: var(--nord4);
+}
+
+.svg-chip {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+.card__back::after {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--nord2);
+}
+
+.card_number,
+.card_user {
+  height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid var(--nord4);
+}
+
+/* .card__field-user,
+.card__field-number {
+
+} */
+
+.card__field-number {
+  position: relative;
+  display: block;
+  top: 20px;
+  margin: 20px;
+}
+
+.card__field-user {
+  position: absolute;
+  display: block;
+  top: 100px;
+  margin: 20px;
+}
+
+.card_submit {
+}
