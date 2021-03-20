@@ -21,6 +21,8 @@
             class="card_number"
             placeholder="9415 1565 1358 1654"
             tabindex="1"
+            maxlength="19"
+            required="true"
           />
         </label>
         <label for="card_user" class="card__field-user">
@@ -32,6 +34,7 @@
             class="card_user"
             placeholder="NIKITA STROGANOV"
             tabindex="2"
+            required="true"
           />
         </label>
         <label for="card_data" class="card__field-data">
@@ -43,6 +46,8 @@
             class="card_data"
             placeholder="11/25"
             tabindex="3"
+            maxlength="5"
+            required="true"
           />
         </label>
       </div>
@@ -56,10 +61,14 @@
             class="card_pin"
             placeholder="●●●"
             tabindex="4"
+            maxlength="4"
+            minlength="3"
+            required="true"
           />
         </label>
       </div>
       <button type="submit" class="card_submit" tabindex="5">Оплатить</button>
     </form>
   </body>
+  <script src="index.js"></script>
 </html>
