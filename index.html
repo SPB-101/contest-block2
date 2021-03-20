@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form class="card">
+      <div class="card__front">
+        <div class="svg-chip">
+          <img src="./chip.png" width="50px" height="40px" />
+        </div>
+        <label for="card_number" class="card__field-number">
+          <div>Номер карты</div>
+          <input
+            type="text"
+            id="card_number"
+            name="card_number"
+            class="card_number"
+            placeholder="9415 1565 1358 1654"
+            tabindex="1"
+            maxlength="19"
+            required="true"
+          />
+        </label>
+        <label for="card_user" class="card__field-user">
+          <div>Имя держателя</div>
+          <input
+            type="text"
+            id="card_user"
+            name="card_user"
+            class="card_user"
+            placeholder="NIKITA STROGANOV"
+            tabindex="2"
+            required="true"
+          />
+        </label>
+        <label for="card_data" class="card__field-data">
+          <div>Срок действия</div>
+          <input
+            type="text"
+            id="card_data"
+            name="card_data"
+            class="card_data"
+            placeholder="11/25"
+            tabindex="3"
+            maxlength="5"
+            required="true"
+          />
+        </label>
+      </div>
+      <div class="card__back">
+        <label for="card_pin" class="card__field-pin">
+          <div>CV-код</div>
+          <input
+            type="password"
+            id="card_pin"
+            name="card_pin"
+            class="card_pin"
+            placeholder="●●●"
+            tabindex="4"
+            maxlength="4"
+            minlength="3"
+            required="true"
+          />
+        </label>
+      </div>
+      <button type="submit" class="card_submit" tabindex="5">Оплатить</button>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
