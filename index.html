@@ -15,6 +15,7 @@
         <label for="card_number" class="card__field-number">
           Номер карты
           <input
+                  maxlength="19"
             type="text"
             id="card_number"
             name="card_number"
@@ -36,6 +37,7 @@
         <label for="card_data">
           Срок действия
           <input
+            maxlength="5"
             type="text"
             id="card_data"
             name="card_data"
@@ -47,10 +49,11 @@
       <div class="card__back">
         <!-- <label for="card_pin">
           CV-код
-          <input type="text" id="card_pin" name="card_pin" class="card_pin" placeholder="●●●" />
+          <input maxlength="3" type="text" id="card_pin" name="card_pin" class="card_pin" placeholder="●●●" />
         </label> -->
       </div>
       <button type="submit" class="card_submit">Оплатить</button>
     </form>
+    <script src="./index.js"></script>
   </body>
 </html>
