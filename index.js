@@ -90,8 +90,10 @@ ccNumberInput.addEventListener('input', ccNumberInputInputHandler);
 ccExpiryInput.addEventListener('keydown', ccExpiryInputKeyDownHandler);
 ccExpiryInput.addEventListener('input', ccExpiryInputInputHandler);
 
-document.querySelector('.card_sumbit').addEventListener('click', e => {
+document.querySelector('.card_submit').addEventListener('click', e => {
   e.preventDefault();
-  new form() = FormData(document.querySelector('.card'));
-  console.log(form);
+  const data = {};
+  const form = new FormData(document.querySelector('.card'));
+  for (const [key, value] of form.entries()) data[key] = value;
+  console.log(data);
 });
